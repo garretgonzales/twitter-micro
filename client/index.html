@@ -14,7 +14,17 @@
         <h1 class="title">Twitter Sucks!</h1>
 
     </header>
-
+    <form class="tweetForm">
+        <label for="name">Name</label>
+        <input class="u-full-width" type="text" id="name" name="name">
+        <label for="content">Content</label>
+        <textarea class="u-full-width" type="text" id="content" name="content"></textarea>
+        <button class="button-primary">Send Tweet</button>
+    </form>
+    <div class="loading">
+        <img src="/images/dual-loading.gif" alt="">
+    </div>
 </body>
+<script src="client.js"></script>
 
 </html>
