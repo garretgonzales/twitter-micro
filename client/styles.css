@@ -11,3 +11,8 @@
 .loading {
     text-align: center;
 }
+
+.tweets {
+    width: 70%;
+    margin: 0 auto;
+}
