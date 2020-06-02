@@ -8,7 +8,7 @@ A full-stack twitter clone application.
 
 **Technologies:** HTML/CSS, JavaScript, MongoDB, Node.
 
-**Dependencies:** live-server 
+**Dependencies:** live-server, nodemon, express, morgan 
 
 
 **MVP:** 
