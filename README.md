@@ -1,13 +1,15 @@
 # twitter-micro
+
 A full-stack twitter clone application.
 
-Trello: https://trello.com/b/mDGt8RBS/twitter-micro
+**Trello:** https://trello.com/b/mDGt8RBS/twitter-micro
 
 
 
-<b>Technologies:</b> HTML/CSS, JavaScript, MongoDB, Node.
+**Technologies:** HTML/CSS, JavaScript, MongoDB, Node.
 
-<b>MVP:</b> 
+
+**MVP:** 
 - User can send messages to back-end.
 - User can see new messages on 'live'.
 - User can delete previous messages.
@@ -15,4 +17,7 @@ Trello: https://trello.com/b/mDGt8RBS/twitter-micro
 - Visual loader for User.
 ---------
 
-![](https://media.giphy.com/media/Ya6TjOP90uoJa/giphy.gif)
+
+
+
+![yes](https://media.giphy.com/media/Ya6TjOP90uoJa/giphy.gif)
