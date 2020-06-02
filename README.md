@@ -8,6 +8,8 @@ A full-stack twitter clone application.
 
 **Technologies:** HTML/CSS, JavaScript, MongoDB, Node.
 
+**Dependencies:** live-server 
+
 
 **MVP:** 
 - User can send messages to back-end.
