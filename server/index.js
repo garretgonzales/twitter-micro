@@ -6,7 +6,7 @@ const rateLimit = require('express-rate-limit');
 
 const app = express();
 
-const db = monk('localhost/tweeter');
+const db = monk(process.env.MONGO_URI || 'localhost/tweeter');
 const tweets = db.get('tweets'); // collection within db - created automatically by mongo
 const filter = new Filter();
 
