@@ -1,12 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const monk = require('monk');
+const Filter = require('bad-words');
 
 const app = express();
 
 const db = monk('localhost/tweeter');
 const tweets = db.get('tweets'); // collection within db - created automatically by mongo
-
+const filter = new Filter();
 
 
 app.use(cors());
@@ -35,8 +36,8 @@ app.post('/tweets', (req, res) => {
     if (isValidTweet(req.body)) {
         // insert into db..
         const tweet = {
-            name: req.body.name.toString(),
-            content: req.body.content.toString(),
+            name: filter.clean(req.body.name.toString()),
+            content: filter.clean(req.body.content.toString()),
             created: new Date()
         };
 
