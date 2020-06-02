@@ -7,7 +7,7 @@ app.use(express.json()); // bodyparser built into express middleware
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Tweeting w/nodemon part4'
+        message: 'Tweeting w/nodemon part5'
     });
 });
 
@@ -18,6 +18,7 @@ function isValidTweet(tweet) {
 }
 
 app.post('/tweets', (req, res) => {
+    console.log(req.body);
     if (isValidTweet(req.body)) {
         // insert into db..
         const tweet = {
