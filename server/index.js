@@ -10,8 +10,26 @@ app.get('/', (req, res) => {
         message: 'Tweeting w/nodemon part4'
     });
 });
+
+
+function isValidTweet(tweet) {
+    return tweet.name && tweet.name.toString().trim() !== '' &&
+        tweet.content && tweet.content.toString().trim() !== '';
+}
+
 app.post('/tweets', (req, res) => {
-    console.log(req.body);
+    if (isValidTweet(req.body)) {
+        // insert into db..
+        const tweet = {
+            name: req.body.name.toString(),
+            content: req.body.content.toString()
+        };
+    } else {
+        res.status(422);
+        res.json({
+            message: 'Fill in all fields.'
+        });
+    }
 })
 
 app.listen(5001, () => {
